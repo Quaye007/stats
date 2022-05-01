@@ -91,16 +91,17 @@ height: 50%;
 
 .main-box{
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: center;
     gap: 1rem;
     margin: 10px;
 }
 
 .sub-1{
   
-    
-
-    max-width: 50%;
+   
+    width: 50%;
 }
 
 
@@ -114,7 +115,19 @@ height: 50%;
 
 .sub-1 h1{
     font-weight: 800;
+    padding: 30px;
+
     color: hsl(0, 0%, 100%);
+}
+
+.sub-1 p{
+    padding: 30px;
+
+}
+
+.main-box{
+    align-items: center;
+
 }
 span{
     color: blueviolet;
