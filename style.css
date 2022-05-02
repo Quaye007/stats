@@ -94,7 +94,7 @@ flex-wrap: wrap;
 
 
     display: flex;
-    padding: 0px;
+   
 }
 
 
@@ -122,10 +122,10 @@ flex-wrap: wrap;
 
 .sub-2{
     width: 50%;
-    
+    margin: 0%;
     border-radius: 0px 10px 10px 0px  ;
     background-image: url( image-header-desktop.jpg);
-
+    opacity: 0.2;
    background-repeat: no-repeat;
    background-size: cover;
 }
@@ -161,8 +161,40 @@ img{
 
 
 
-@media  (max-width: 600px){
+@media  (max-width: 1200px){
 
 
-    
+    .content .main .sub-main .sub-1 {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.sub-2{
+   height: 50vh;
+    width:100%;
+
+    border-radius: 10px 10px 0px 0px  ;
+}
+
+
+.main-box{
+    display: flex;
+}
+
+    .content .sub-main{
+        height:100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+
+
+@media  (max-width: 1000px){
+
+    .main-box{
+        display: grid;
+    }
+
 }
